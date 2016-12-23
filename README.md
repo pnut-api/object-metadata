@@ -1,1 +1,1 @@
-# action-metadata
+# object-metadata
