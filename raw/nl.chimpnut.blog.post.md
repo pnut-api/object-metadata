@@ -1,13 +1,13 @@
-<!-- give your annotation a title -->
+<!-- give your raw item a title -->
 # ChimPnut etc Long Posts
 
-<!-- specify the "type" for your annotation -->
+<!-- specify the "type" for your raw item -->
 > ### nl.chimpnut.blog.post
 
-<!-- provide a description of what your annotation represents -->
-The longpost “annotation” is meant to provide extended text for a Pnut post.
+<!-- provide a description of what your raw item represents -->
+The longpost "raw" is meant to provide extended text for a Pnut post.
 
-<!-- provide at least one example of what your annotation might look like in the wild -->
+<!-- provide at least one example of what your raw might look like in the wild -->
 ## Example
 
 ~~~ js
@@ -23,7 +23,7 @@ The longpost “annotation” is meant to provide extended text for a Pnut post.
 }
 ~~~
 
-<!-- provide a complete description of the fields in the "value" object for your annotation -->
+<!-- provide a complete description of the fields in the "value" object for your raw item -->
 ## Fields
 
 | Field         | Required? | Type   | Description                                                    |
