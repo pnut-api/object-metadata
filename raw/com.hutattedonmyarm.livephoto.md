@@ -14,13 +14,13 @@ This is meant to support Apple's 'Live Photos', and can be used on any platform.
 {
     "type":"com.hutattedonmyarm.livephoto",
     "value": {
-    	"version": "1.0",
-    	"width": "1959",
-    	"height": "2048",
-    	"photo_url": "https://i.imgur.com/abcdef.jpg",
-    	"video_url": "https://somehost.com/abcdef.mov",
-    	"title": "A moving picture"
-  	}
+        "version": "1.0",
+        "width": "1959",
+        "height": "2048",
+        "photo_url": "https://i.imgur.com/abcdef.jpg",
+        "video_url": "https://somehost.com/abcdef.mov",
+        "title": "A moving picture"
+    }
 }
 ~~~
 
@@ -34,7 +34,7 @@ This is meant to support Apple's 'Live Photos', and can be used on any platform.
 | height        | Required  | string | Height of the video and photo (needs to be identical)          |
 | photo_url     | Required  | string | URL of the still image. Must be a .jpg                         |
 | video_url     | Required  | string | URL of the video. Must be a .mov                               |
-| title.        |           | string | Title of the live photo (if any)                               |
+| title         |           | string | Title of the live photo (if any)                               |
 
 <!-- provide a way to contact you -->
 ## Maintainers
@@ -46,4 +46,4 @@ This is meant to support Apple's 'Live Photos', and can be used on any platform.
 
 <!-- provide references to related annotations -->
 ## Related annotations
-* It is recommended to include the photo part also as oembd image, so that clients without support for Live Photos can still display the still image
+* It is recommended to include the photo part also as oembed image, so that clients without support for Live Photos can still display the still image.
