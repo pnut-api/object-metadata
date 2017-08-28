@@ -26,9 +26,9 @@
 
 | Field         | Required? | Type   | Description                                                    |
 | -----         | --------- | ----   | -----------                                                    |
-| name          | Required  | string |  |
-| description   | Optional  | string |  |
-| categories    | Optional  | list of strings |  |
+| name          | Required  | string | Name of the chat room.  |
+| description   | Optional  | string | Description of the chat room. Up to 256 bytes. |
+| categories    | Optional  | list of strings | Up to three categories. Options are `fun, lifestyle, profession, language, community, tech, event, general`. |
 
 <!-- provide a way to contact you -->
 ## Maintainers
@@ -43,4 +43,3 @@
 
 <!-- provide references to related raw items -->
 ## Related raw items
-# io.pnut.core.chat-settings
