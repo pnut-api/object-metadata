@@ -5,7 +5,7 @@
 > ### io.pnut.core.oembed
 
 <!-- provide a description of what your raw represents -->
-The embedded media raw specifies an image, video, or other rich content that should be displayed with this post. It uses the [JSON oEmbed specification](http://oembed.com). We support the standard `photo`, `video`, and `rich` oEmbed types, and an additional `html5video` type specified below.
+The embedded media raw specifies an image, video, or other rich content that should be displayed with this post. It uses the [JSON oEmbed specification](http://oembed.com). We support the standard `photo`, `video`, and `rich` oEmbed types, and additional `html5video` type and `audio` type specified below.
 
 We highly recommend providing the ```embeddable_url``` attribute so other clients can request different oEmbed details for this object from the original oEmbed provider (if there is one).
 
@@ -86,6 +86,33 @@ We highly recommend providing the ```embeddable_url``` attribute so other client
 }
 ~~~
 
+### Audio
+
+~~~ js
+{
+    "type": "io.pnut.core.oembed",
+    "value": {
+        "type": "audio",
+        "genre": "hip hop",
+        "license": "cc-by",
+        "release": "1",
+        "version": "1.0",
+        "track_type": "original",
+        "thing reserved": "this thing!",
+        "embeddable_url": "https:\/\/audio.pnut.io\/62",
+        "duration": 185,
+        "bitrate": 128,
+        "title": "Sooong",
+        "provider_name": "pnut.io",
+        "provider_url": "https:\/\/pnut.io",
+        "file_id": "62",
+        "file_token_read": "DGWeUU0eF-jYLm5th4sTb-0Atfvml81C",
+        "url_expires_at": "2020-11-08T14:41:28Z",
+        "url": "https:\/\/d2fk0vffd5axpg.cloudfront.net\/cw_I3Y2Ta8Bn3sPlJMkdislekjfcyngFHHrWaT?Expires=1604846488..."
+    }
+}
+~~~
+
 ### Rich
 
 ~~~ js
@@ -135,6 +162,7 @@ We highly recommend providing the ```embeddable_url``` attribute so other client
 | `thumbnail_url` | Optional | string | A URL to an image that represents this resource. If this parameter is specified, `thumbnail_height` and `thumbnail_width` must also be present. |
 | `thumbnail_height` | Optional | string | The height of the thumbnail image. If this parameter is specified, `thumbnail_url` and `thumbnail_width` must also be present. |
 | `thumbnail_width` | Optional | string | The height of the thumbnail image. If this parameter is specified, `thumbnail_height` and `thumbnail_url` must also be present. |
+| `` | Optional |  | |
 
 <!-- provide a way to contact you -->
 ## Maintainers

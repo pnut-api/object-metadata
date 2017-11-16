@@ -5,7 +5,7 @@
 > ### io.pnut.core.oembed.metadata
 
 <!-- provide a description of what your raw represents -->
-The embedded media raw specifies an image, video, or other rich content that should be displayed with this post. It uses the [JSON oEmbed specification](http://oembed.com). We support the standard `photo`, `video`, and `rich` oEmbed types, and an additional `html5video` type specified below.
+The embedded media raw specifies an image, video, or other rich content that should be displayed with this post. It uses the [JSON oEmbed specification](http://oembed.com). We support the standard `photo`, `video`, and `rich` oEmbed types, and additional `html5video` type and `audio` type specified below.
 
 The `io.pnut.core.oembed.metadata` raw type can *only* be attached to files, where `io.pnut.core.oembed` can only be attached to posts and messages.
 
@@ -84,6 +84,33 @@ We highly recommend providing the ```embeddable_url``` attribute so other client
             {"type": "video/webm", "url": "http://vjs.zencdn.net/v/oceans.webm"}
         ]
         "poster_url": "http://www.videojs.com/img/poster.jpg",
+    }
+}
+~~~
+
+### Audio
+
+~~~ js
+{
+    "type": "io.pnut.core.oembed",
+    "value": {
+        "type": "audio",
+        "genre": "hip hop",
+        "license": "cc-by",
+        "release": "1",
+        "version": "1.0",
+        "track_type": "original",
+        "thing reserved": "this thing!",
+        "embeddable_url": "https:\/\/audio.pnut.io\/62",
+        "duration": 185,
+        "bitrate": 128,
+        "title": "Sooong",
+        "provider_name": "pnut.io",
+        "provider_url": "https:\/\/pnut.io",
+        "file_id": "62",
+        "file_token_read": "DGWeUU0eF-jYLm5th4sTb-0Atfvml81C",
+        "url_expires_at": "2020-11-08T14:41:28Z",
+        "url": "https:\/\/d2fk0vffd5axpg.cloudfront.net\/cw_I3Y2Ta8Bn3sPlJMkdislekjfcyngFHHrWaT?Expires=1604846488..."
     }
 }
 ~~~
