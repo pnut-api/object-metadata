@@ -29,7 +29,7 @@ Clients could offer users "Do not hide this topic" for the rest of a session whe
 
 |Field|Required?|Type|Description|
 |-----|---------|----|-----------|
-|topic|Required|string|A one-line description of what is being talked about. Recommended max length of 128 characters.|
+|topic|Required|string|An un-escaped, one-line description of what is being talked about. Recommended max length of 128 characters.|
 |expired_at||string|Optional ISO 8601 timestamp after which the topic will no longer be spoiled by the post or message.|
 
 <!-- provide a way to contact you -->
