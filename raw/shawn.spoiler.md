@@ -14,7 +14,7 @@ Clients could offer users "Do not hide this topic" for the rest of a session whe
 <!-- provide at least one example of what your raw might look like in the wild -->
 ## Example
 
-~ json
+~~~ json
 {
     "type": "shawn.spoiler",
     "value": {
@@ -22,7 +22,7 @@ Clients could offer users "Do not hide this topic" for the rest of a session whe
         "expired_at": "2018-04-27T13:02:56Z"
     }
 }
-~
+~~~
 
 <!-- provide a complete description of the fields in the "value" object for your raw -->
 ## Fields
