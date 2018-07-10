@@ -46,7 +46,7 @@ This is meant to add support for user tagging inside photos, and can be used on 
 
 ## Visual example
 
-![Olympia Tagged](/images/olympia_tagged.png)
+![Olympia Tagged](/images/olympia_tagged.png | width=200)
 
 <!-- provide a way to contact you -->
 ## Maintainers
