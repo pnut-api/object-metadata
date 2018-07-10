@@ -37,12 +37,16 @@ This is meant to add support for user tagging inside photos, and can be used on 
 | ref           | Required  | string | A reference URL. This spec only provides the tagging, so clients should check if the post has an oembed with this URL      |
 | tags          | Required  | object | The object that provides the tags                              |
 
-## Tag Object
+### Tag Object
 
 | Field         | Required? | Type   | Description                                                    |
 | -----         | --------- | ----   | -----------                                                    |
 | username      | Required  | string | The username in the tagged picture                             |
 | position      | Required  | string | The position of the tagged face. This assumes that the picture's top-left is the point (0,0). Therefore, the x and y refer to it (x being the horizontal distance in pixels from x=0; and y being the vertical distance in pixels from y=0). Width (w) and height (h) are the width and height of the face.                           |
+
+## Visual example
+
+![Olympia Tagged](/images/olympia_tagged.png)
 
 <!-- provide a way to contact you -->
 ## Maintainers
