@@ -46,7 +46,7 @@ This is meant to add support for user tagging inside photos, and can be used on 
 
 ## Visual example
 
-<img src="/images/olympia_tagged.png" alt="alt text" width="200">
+<img src="/images/olympia_tagged.png" alt="alt text" width="350">
 <!-- ![Olympia Tagged](/images/olympia_tagged.png) -->
 
 <!-- provide a way to contact you -->
