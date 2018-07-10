@@ -17,11 +17,21 @@ This is meant to add support for user tagging inside photos, and can be used on 
         "version": "1.0",
         "ref" : "https://i.imgur.com/abcdef.jpg",
         "tags" : [{
-            "username" : "rafaelcosta",
-            "position" : "x,y,w,h",
+            "user_id"  : "47",
+            "position" : {
+                "x" : "10",
+                "y" : "40",
+                "w" : "100",
+                "h" : "120",
+            },
           }, {
-            "username" : "33MHz",
-            "position" : "x,y,w,h",
+            "user_id" : "1",
+            "position" : {
+                "x" : "400",
+                "y" : "40",
+                "w" : "100",
+                "h" : "120",
+            },
           }, {...},
         ],
     }
@@ -41,13 +51,12 @@ This is meant to add support for user tagging inside photos, and can be used on 
 
 | Field         | Required? | Type   | Description                                                    |
 | -----         | --------- | ----   | -----------                                                    |
-| username      | Required  | string | The username in the tagged picture                             |
-| position      | Required  | string | The position of the tagged face. This assumes that the picture's top-left is the point (0,0). Therefore, the x and y refer to it (x being the horizontal distance in pixels from x=0; and y being the vertical distance in pixels from y=0). Width (w) and height (h) are the width and height of the face.                           |
+| user_id       | Required  | string | The username in the tagged picture                             |
+| position      | Required  | object | The position of the tagged face. This assumes that the picture's top-left is the point (0,0). Therefore, the x and y refer to it (x being the horizontal distance in pixels from x=0; and y being the vertical distance in pixels from y=0). Width (w) and height (h) are the width and height of the face.                           |
 
 ## Visual example
 
 <img src="/images/olympia_tagged.png" alt="alt text" width="350">
-<!-- ![Olympia Tagged](/images/olympia_tagged.png) -->
 
 <!-- provide a way to contact you -->
 ## Maintainers
