@@ -44,14 +44,15 @@ This is meant to add support for user tagging inside photos, and can be used on 
 | Field         | Required? | Type   | Description                                                    |
 | -----         | --------- | ----   | -----------                                                    |
 | version       | Required  | string | Version Number. Currently, only 1.0 exists                     |
-| ref           | Required  | string | A reference URL. This spec only provides the tagging, so clients should check if the post has an oembed with this URL      |
+| ref           | Required  | string | A reference URL/File ID. This spec only provides the tagging, so clients should check if the post has an oembed with this URL/File ID      |
 | tags          | Required  | object | The object that provides the tags                              |
 
 ### Tag Object
 
 | Field         | Required? | Type   | Description                                                    |
 | -----         | --------- | ----   | -----------                                                    |
-| user_id       | Required  | string | The username in the tagged picture                             |
+| user_id       | Required  | string | The user_id in the tagged picture                              |
+| username      | Required  | string | The username in the tagged picture                             |
 | position      | Required  | object | The position of the tagged face. This assumes that the picture's top-left is the point (0,0). Therefore, the x and y refer to it (x being the horizontal distance in pixels from x=0; and y being the vertical distance in pixels from y=0). Width (w) and height (h) are the width and height of the face.                           |
 
 ## Visual example
