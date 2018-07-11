@@ -44,7 +44,7 @@ This is meant to add support for user tagging inside photos, and can be used on 
 | Field         | Required? | Type   | Description                                                    |
 | -----         | --------- | ----   | -----------                                                    |
 | version       | Required  | string | Version Number. Currently, only 1.0 exists                     |
-| attached_to_type   | Required  | one of `file` or `url` | Specifies if this raw object refers to a file or an URL |
+| attached_to_type   | Required  | `file` or `url` | Specifies if this raw object refers to a file or an URL |
 | ref           | Required  | string | A reference URL/File ID. This spec only provides the tagging, so clients should check if the post has an oembed with this URL/File ID      |
 | tags          | Required  | object | The object that provides the tags                              |
 
