@@ -19,7 +19,7 @@ This is meant to add support for user tagging inside photos, and can be used on 
         "ref" : "https://i.imgur.com/abcdef.jpg",
         "tags" : [{
             "user_id"  : "47",
-            "position" : {
+            "location" : {
                 "x" : "10",
                 "y" : "40",
                 "w" : "100",
@@ -27,7 +27,7 @@ This is meant to add support for user tagging inside photos, and can be used on 
             },
           }, {
             "user_id" : "1",
-            "position" : {
+            "location" : {
                 "x" : "400",
                 "y" : "40",
                 "w" : "100",
@@ -55,7 +55,7 @@ This is meant to add support for user tagging inside photos, and can be used on 
 | -----         | --------- | ----   | -----------                                                    |
 | user_id       | Required  | string | The user_id in the tagged picture                              |
 | username      | Required  | string | The username in the tagged picture                             |
-| position      | Required  | object | The position of the tagged face. This assumes that the picture's top-left is the point (0,0). Therefore, the x and y refer to it (x being the horizontal distance in pixels from x=0; and y being the vertical distance in pixels from y=0). Width (w) and height (h) are the width and height of the face.                           |
+| location      | Required  | object | The position of the tagged face. This assumes that the picture's top-left is the point (0,0). Therefore, the x and y refer to it (x being the horizontal distance in pixels from x=0; and y being the vertical distance in pixels from y=0). Width (w) and height (h) are the width and height of the face.                           |
 
 ## Visual example
 
