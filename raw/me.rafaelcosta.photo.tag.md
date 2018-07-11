@@ -15,6 +15,7 @@ This is meant to add support for user tagging inside photos, and can be used on 
     "type":"me.rafaelcosta.photo.tag",
     "value": {
         "version": "1.0",
+        "attached_to_type" : "url",
         "ref" : "https://i.imgur.com/abcdef.jpg",
         "tags" : [{
             "user_id"  : "47",
