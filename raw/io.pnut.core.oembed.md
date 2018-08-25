@@ -162,15 +162,20 @@ We highly recommend providing the ```embeddable_url``` attribute so other client
 | `thumbnail_url` | Optional | string | A URL to an image that represents this resource. If this parameter is specified, `thumbnail_height` and `thumbnail_width` must also be present. |
 | `thumbnail_height` | Optional | string | The height of the thumbnail image. If this parameter is specified, `thumbnail_url` and `thumbnail_width` must also be present. |
 | `thumbnail_width` | Optional | string | The height of the thumbnail image. If this parameter is specified, `thumbnail_height` and `thumbnail_url` must also be present. |
-| `` | Optional |  | |
+| `duration` | Required if `type="audio"` | integer | Duration of the recording in seconds |
+| `bitrate` | Optional | integer | Bitrate of the recording in Kbps |
+| `release` | Optional | integer | Number representing which release or version of a recording |
+| `license` | Optional | string | A license for a recording. One of `no-rights-reserved`, `all-rights-reserved`, `cc-by`, `cc-by-nc`, `cc-by-nd`, `cc-by-sa`, `cc-by-nc-nd`, `cc-by-nc-sa`. |
+| `genre` | Optional | string | Genre of a recording, up to 128 bytes |
+| `track_type` | Optional | string | Type of recording. One of `original`, `remix`, `live`, `spoken`, `podcast`, `demo`, `loop`, `sound_effect`, `sample`, `other` |
 
 <!-- provide a way to contact you -->
 ## Maintainers
-* ([@33MHz](https://pnut.io/@33mhz), [support@pnut.io](mailto:support@pnut.io))
+* [@33MHz](https://pnut.io/@33mhz), [support@pnut.io](mailto:support@pnut.io)
 
 <!-- provide references to compatible apps / service -->
 ## Used by
-* 
+* [@beta](https://beta.pnut.io)
 
 <!-- provide references to related raws -->
 ## Related raw
