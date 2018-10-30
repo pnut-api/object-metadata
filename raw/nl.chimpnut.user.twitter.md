@@ -2,7 +2,7 @@
 # Twitter User
 
 <!-- specify the "type" for your raw -->
-> ### io.pnut.user.twitter
+> ### nl.chimpnut.user.twitter
 
 <!-- provide a description of what your raw represents -->
 The Twitter raw is meant to specify the username of the user on the website Twitter.com.
@@ -12,7 +12,7 @@ The Twitter raw is meant to specify the username of the user on the website Twit
 
 ~~~ js
 {
-    "type": "io.pnut.user.twitter",
+    "type": "nl.chimpnut.user.twitter",
     "value": {
         "username": "pnutio",
     }

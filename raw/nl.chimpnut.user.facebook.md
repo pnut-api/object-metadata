@@ -1,20 +1,20 @@
 <!-- give your raw a title -->
-# Homepage
+# Twitter User
 
 <!-- specify the "type" for your raw -->
-> ### io.pnut.user.homepage
+> ### io.pnut.user.twitter
 
 <!-- provide a description of what your raw represents -->
-The homepage raw is meant to specify the homepage of the user on the world wide web.
+The Twitter raw is meant to specify the username of the user on the website Twitter.com.
 
 <!-- provide at least one example of what your raw might look like in the wild -->
 ## Example
 
 ~~~ js
 {
-    "type": "io.pnut.user.homepage",
+    "type": "nl.chimpnut.user.facebook",
     "value": {
-        "url": "http://pnut.io",
+        "username": "pnutio",
     }
 }
 ~~~
@@ -22,13 +22,13 @@ The homepage raw is meant to specify the homepage of the user on the world wide 
 <!-- provide a complete description of the fields in the "value" object for your raw -->
 ## Fields
 
-| Field         | Required? | Type   | Description                                    |
-| -----         | --------- | ----   | -----------                                    |
-| url           | Required  | string | A valid URL pointing to the users' homepage    |
+| Field         | Required? | Type   | Description                                                 |
+| -----         | --------- | ----   | -----------                                                 |
+| username      | Required  | string | A valid username pointing to the Facebook users' username    |
 
 <!-- provide a way to contact you -->
 ## Maintainers
-* @rafaelcosta
+* @rafaelcosta (?)
 
 <!-- provide references to compatible apps / service -->
 ## Used by

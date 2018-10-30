@@ -2,7 +2,7 @@
 # Signal User
 
 <!-- specify the "type" for your raw -->
-> ### io.pnut.user.signal
+> ### me.rafaelcosta.user.signal
 
 <!-- provide a description of what your raw represents -->
 The Signal raw is meant to specify the username of the user on the messaging service Signal.
@@ -12,7 +12,7 @@ The Signal raw is meant to specify the username of the user on the messaging ser
 
 ~~~ js
 {
-    "type": "io.pnut.user.signal",
+    "type": "me.rafaelcosta.user.signal",
     "value": {
         "phone": "+5511987654321",
     }

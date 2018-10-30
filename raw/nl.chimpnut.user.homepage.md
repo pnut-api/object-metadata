@@ -1,18 +1,18 @@
 <!-- give your raw a title -->
-# Blog
+# Homepage
 
 <!-- specify the "type" for your raw -->
-> ### io.pnut.user.blog
+> ### nl.chimpnut.user.homepage
 
 <!-- provide a description of what your raw represents -->
-The blog raw is meant to specify the blog of the user on the world wide web.
+The homepage raw is meant to specify the homepage of the user on the world wide web.
 
 <!-- provide at least one example of what your raw might look like in the wild -->
 ## Example
 
 ~~~ js
 {
-    "type": "io.pnut.user.blog",
+    "type": "nl.chimpnut.user.homepage",
     "value": {
         "url": "http://pnut.io",
     }
@@ -24,11 +24,11 @@ The blog raw is meant to specify the blog of the user on the world wide web.
 
 | Field         | Required? | Type   | Description                                    |
 | -----         | --------- | ----   | -----------                                    |
-| url           | Required  | string | A valid URL pointing to the users' blog        |
+| url           | Required  | string | A valid URL pointing to the users' homepage    |
 
 <!-- provide a way to contact you -->
 ## Maintainers
-* @rafaelcosta
+* @rafaelcosta (?)
 
 <!-- provide references to compatible apps / service -->
 ## Used by
