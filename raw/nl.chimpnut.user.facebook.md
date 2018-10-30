@@ -1,8 +1,8 @@
 <!-- give your raw a title -->
-# Twitter User
+# Facebook User
 
 <!-- specify the "type" for your raw -->
-> ### io.pnut.user.twitter
+> ### nl.chimpnut.user.facebook
 
 <!-- provide a description of what your raw represents -->
 The Twitter raw is meant to specify the username of the user on the website Twitter.com.
