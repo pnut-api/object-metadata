@@ -10,6 +10,8 @@ The channel invite raw can be used to indicate that a post or message is an invi
 <!-- provide at least one example of what your raw might look like in the wild -->
 ## Example
 
+### Provided to Pnut.io
+
 ~~~ js
 {
     "type": "io.pnut.core.channel.invite",
@@ -18,6 +20,20 @@ The channel invite raw can be used to indicate that a post or message is an invi
     }
 }
 ~~~
+
+### Returned by API
+
+~~ js
+{
+    "type": "io.pnut.core.channel.invite",
+    "value": {
+        "channel_id": "18",
+        "name": "Pnut Developers"
+    }
+}
+~~
+
+The API will check for a valid channel ID, and check `io.pnut.core.chat` channel types for a `name` to include in the returned JSON automatically.
 
 <!-- provide a complete description of the fields in the "value" object for your raw -->
 ## Fields
@@ -33,3 +49,4 @@ The channel invite raw can be used to indicate that a post or message is an invi
 <!-- provide references to compatible apps / service -->
 ## Used by
 * [Patter](https://patter.chat)
+* [Beta](https://beta.pnut.io)
