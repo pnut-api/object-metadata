@@ -23,7 +23,7 @@ The channel invite raw can be used to indicate that a post or message is an invi
 
 ### Returned by API
 
-~~ js
+~~~ js
 {
     "type": "io.pnut.core.channel.invite",
     "value": {
@@ -31,7 +31,7 @@ The channel invite raw can be used to indicate that a post or message is an invi
         "name": "Pnut Developers"
     }
 }
-~~
+~~~
 
 The API will check for a valid channel ID, and check `io.pnut.core.chat` channel types for a `name` to include in the returned JSON automatically.
 
