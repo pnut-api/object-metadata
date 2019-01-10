@@ -19,9 +19,8 @@ telegram
 facebook
 mastodon
 micro.blog
+signal
 ```
-
-_Signal was removed from a previous attempt at this specification because they do not support URL schemes ATM._
 
 <!-- provide at least one example of what your raw might look like in the wild -->
 ## Example
