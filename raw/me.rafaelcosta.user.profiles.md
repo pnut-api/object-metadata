@@ -78,5 +78,7 @@ signal
 
 <!-- provide references to compatible apps / service -->
 ## Used by
-* [ChimPnut](https://itunes.apple.com/us/app/chimpnut-microblog-pm-chat/id1198300163?mt=8)
+* [ChimPnut*](https://itunes.apple.com/us/app/chimpnut-microblog-pm-chat/id1198300163?mt=8)
 * [Arachis](https://itunes.apple.com/br/app/arachis/id1200781062?mt=8)
+
+*Not completely sure if ChimPnut already implements it. There was a discussion about implementing it.
