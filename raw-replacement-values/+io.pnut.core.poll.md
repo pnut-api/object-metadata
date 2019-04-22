@@ -13,7 +13,7 @@ Easily attach a poll to a post or message, using a "replacement value". By inclu
 #### Provided to Pnut.io
 ~~~ js
 {
-    "type": "com.example.test",
+    "type": "io.pnut.core.poll-notice",
     "value": {
         "+io.pnut.core.poll": {
             "poll_token": "12345abcde",
@@ -27,7 +27,7 @@ Easily attach a poll to a post or message, using a "replacement value". By inclu
 #### Returned by API
 ~~~ js
 {
-    "type": "com.example.test",
+    "type": "io.pnut.core.poll-notice",
     "value": {
         "poll_token": "12345abcde",
         "poll_id": "1",
