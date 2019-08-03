@@ -17,8 +17,8 @@ This way, the post on Global will invite users into the channel, and the message
 {
     "type": "net.patter-app.broadcast",
     "value": {
-        id: "348684",
-        url: "https://posts.pnut.io/348684"
+        "id": "348684",
+        "url": "https://posts.pnut.io/348684"
     }
 }
 ~~~
