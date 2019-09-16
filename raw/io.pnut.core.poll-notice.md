@@ -12,8 +12,6 @@ The embed will not include up-to-date results for the poll. The client would hav
 <!-- provide at least one example of what your raw might look like in the wild -->
 ## Examples
 
-### Photo
-
 ~~~ js
 {
     "type": "io.pnut.core.poll-notice",
@@ -58,7 +56,7 @@ The embed will not include up-to-date results for the poll. The client would hav
 
 | Field | Required? | Type | Description |
 | ----- | --------- | ---- | ----------- |
-| `prompt` | Required  | string | The time at which the poll was created in ISO 8601 format. |
+| `prompt` | Required  | string | A readable name of the poll. |
 | `poll_token` | Required | string | A token to access and respond to the poll. |
 | `closed_at` | Required | string | The time at which the poll closes in ISO 8601 format. |
 | `poll_id` | Required | string | Primary identifier for a poll. |
