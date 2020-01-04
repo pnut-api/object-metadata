@@ -5,11 +5,11 @@
 > ### io.pnut.core.oembed.metadata
 
 <!-- provide a description of what your raw represents -->
-The embedded media raw specifies an image, video, or other rich content that should be displayed with this post. It uses the [JSON oEmbed specification](http://oembed.com). We support the standard `photo`, `video`, and `rich` oEmbed types, and additional `html5video` type and `audio` type specified below.
+The embedded media raw specifies an image, video, or other rich content that should be displayed with this post. It uses the [JSON oEmbed specification](https://oembed.com). We support the standard `photo`, `video`, and `rich` oEmbed types, and additional `html5video` type and `audio` type specified below.
 
 The `io.pnut.core.oembed.metadata` raw type can *only* be attached to files, where `io.pnut.core.oembed` can only be attached to posts and messages.
 
-We highly recommend providing the ```embeddable_url``` attribute so other clients can request different oEmbed details for this object from the original oEmbed provider (if there is one).
+We highly recommend providing the ```embeddable_url``` attribute so other clients can request different oEmbed details for this object from the original oEmbed provider (if there is one other than Pnut!).
 
 <!-- provide at least one example of what your raw might look like in the wild -->
 ## Examples

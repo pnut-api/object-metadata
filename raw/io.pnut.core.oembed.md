@@ -5,9 +5,11 @@
 > ### io.pnut.core.oembed
 
 <!-- provide a description of what your raw represents -->
-The embedded media raw specifies an image, video, or other rich content that should be displayed with this post. It uses the [JSON oEmbed specification](http://oembed.com). We support the standard `photo`, `video`, and `rich` oEmbed types, and additional `html5video` type and `audio` type specified below.
+The embedded media raw specifies an image, video, or other rich content that should be displayed with this post. It uses the [JSON oEmbed specification](https://oembed.com). We support the standard `photo`, `video`, and `rich` oEmbed types, and additional `html5video` type and `audio` type specified below.
 
-We highly recommend providing the ```embeddable_url``` attribute so other clients can request different oEmbed details for this object from the original oEmbed provider (if there is one).
+`io.pnut.core.oembed` can only be attached to posts and messages.
+
+We highly recommend providing the ```embeddable_url``` attribute so other clients can request different oEmbed details for this object from the original oEmbed provider (if there is one other than Pnut!).
 
 <!-- provide at least one example of what your raw might look like in the wild -->
 ## Examples
@@ -149,7 +151,7 @@ We highly recommend providing the ```embeddable_url``` attribute so other client
 | `width` | Required | integer | The width in pixels needed to display the embeddable content. |
 | `height` | Required | integer | The height in pixels needed to display the embeddable content. |
 | `url` | Required if `type="photo"` | string | The source URL for the image. |
-| `html` | Required if `type="video"` or `type="rich"` | string | The HTML to display the rich or video content. It should have no margins or padding. pnut.io does <strong>no validation</strong> of this field. Please program defensively. You may wish to load this in an off-domain iframe to avoid XSS vulnerabilities. |
+| `html` | Required if `type="rich"` | string | The HTML to display the rich or video content. It should have no margins or padding. pnut.io does <strong>no validation</strong> of this field. Please program defensively. You may wish to load this in an off-domain iframe to avoid XSS vulnerabilities. |
 | `sources` | Required if `type="html5video"` | list | A list of up to 5 `{type, url}` entries to use in the `source` tags. `type` should be a string that can be dropped into the `type` attribute of a `source` tag (e.g. `video/mp4` or `video/webm; codecs="vp8.0, vorbis"`). |
 | `embeddable_url` | Optional (but recommended) | string | A URL that can be given to an oEmbed provider to recreate the oEmbed data contained in this raw. This is useful so other clients can get updated information or retrieve a different sized embedding through an oEmbed endpoint. |
 | `title` | Optional | string | A title for this embedded content. |
@@ -163,11 +165,32 @@ We highly recommend providing the ```embeddable_url``` attribute so other client
 | `thumbnail_height` | Optional | string | The height of the thumbnail image. If this parameter is specified, `thumbnail_url` and `thumbnail_width` must also be present. |
 | `thumbnail_width` | Optional | string | The height of the thumbnail image. If this parameter is specified, `thumbnail_height` and `thumbnail_url` must also be present. |
 | `duration` | Required if `type="audio"` | integer | Duration of the recording in seconds |
+| `duration_string` | Optional | string | Duration displayed as a string; `0:10` |
 | `bitrate` | Optional | integer | Bitrate of the recording in Kbps |
+| `frame_rate` | Optional | decimal | Video frame rate |
+| `format` | Optional | string | Video format. Such as `quicktime`, `mp4`, `webm` |
 | `release` | Optional | integer | Number representing which release or version of a recording |
 | `license` | Optional | string | A license for a recording. One of `no-rights-reserved`, `all-rights-reserved`, `cc-by`, `cc-by-nc`, `cc-by-nd`, `cc-by-sa`, `cc-by-nc-nd`, `cc-by-nc-sa`. |
 | `genre` | Optional | string | Genre of a recording, up to 128 bytes |
 | `track_type` | Optional | string | Type of recording. One of `original`, `remix`, `live`, `spoken`, `podcast`, `demo`, `loop`, `sound_effect`, `sample`, `other` |
+
+
+
+### `video` HTML and Posters
+
+When creating a `video`-type oEmbed, if you do not provide `html`, the API will provide a basic `<video>` tag with an iFrame fallback, like this:
+
+```html
+<video width="600" height="400" poster="https://files.pnut.io/7_vNOaWD0rrp.png" src="https://files.pnut.io/BEK9AIsywYP6.m4v" controls><iframe width="600" height="400" src="https://files.pnut.io/BEK9AIsywYP6.m4v"></iframe></video>
+```
+
+If a `poster_url` is provided, it will include that for the video, otherwise the `thumbnail_url` if *that* is provided.
+
+
+### URI Templates
+
+`url`, `poster_url`, `thumbnail_url`, `embeddable_url`, and all url fields in sources are processed for URI templates by default. You can turn this behavior off by passing `"process_template": false` as an extra attribute.
+
 
 <!-- provide a way to contact you -->
 ## Maintainers
