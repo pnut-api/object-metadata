@@ -43,8 +43,8 @@ A message where this raw is attached must present a formatted representation of 
     "type": "io.aya.movie.review",
     "value": {
         "title": "the US film title",
-        "rating": 2.5,
-        "release_date": "1985-07-21",
+        "rating": 2,
+        "release_date": "2020",
         "review": "the film's review",
         "tmdb_id": 334246
     }
