@@ -38,6 +38,7 @@ A message where this raw is attached must present a formatted representation of 
 
 ### Minimal
 
+~~~ js
 {
     "type": "io.aya.movie.review",
     "value": {
@@ -48,6 +49,7 @@ A message where this raw is attached must present a formatted representation of 
         "tmdb_id": 334246
     }
 }
+~~~
 
 ## Fields
 
