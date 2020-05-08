@@ -40,6 +40,8 @@ Optional fields can clarify the originating service, if there is a relevant exte
 | user.username | Optional  | string | Username of the originating username from external service. |
 | user.avatar_image | Optional | string | A URL to an image of the originating user from external service. |
 
+If including `source`, `name` and `url` are required.
+
 <!-- provide a way to contact you -->
 ## Maintainers
 * @33MHz
