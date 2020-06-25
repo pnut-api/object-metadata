@@ -13,7 +13,7 @@ This raw item identifies the original language of the post or message text. It c
 
 ~~~ js
 {
-    "type": "io.pnut.core.oembed",
+    "type": "io.pnut.core.language",
     "value": {
         "language": "ja"
     }
