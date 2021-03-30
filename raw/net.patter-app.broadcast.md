@@ -15,11 +15,12 @@ This way, the post on Global will invite users into the channel, and the message
 
 ~~~ js
 {
-    "type": "net.patter-app.broadcast",
-    "value": {
-        "id": "348684",
-        "url": "https://posts.pnut.io/348684"
-    }
+    "net.patter-app.broadcast": [
+        {
+            "id": "348684",
+            "url": "https://posts.pnut.io/348684"
+        }
+    ]
 }
 ~~~
 

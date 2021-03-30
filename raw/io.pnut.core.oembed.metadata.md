@@ -18,20 +18,21 @@ We highly recommend providing the ```embeddable_url``` attribute so other client
 
 ~~~ js
 {
-    "type": "io.pnut.core.oembed.metadata",
-    "value": {
-        "version": "1.0",
-        "type": "photo",
-        "width": 240,
-        "height": 160,
-        "title": "ZB8T0193",
-        "url": "http://farm4.static.flickr.com/3123/2341623661_7c99f48bbf_m.jpg",
-        "author_name": "Bees",
-        "author_url": "http://www.flickr.com/photos/bees/",
-        "provider_name": "Flickr",
-        "provider_url": "http://www.flickr.com/",
-        "embeddable_url": "http://www.flickr.com/photos/bees/2341623661/"
-    }
+    "io.pnut.core.oembed.metadata": [
+        {
+            "version": "1.0",
+            "type": "photo",
+            "width": 240,
+            "height": 160,
+            "title": "ZB8T0193",
+            "url": "http://farm4.static.flickr.com/3123/2341623661_7c99f48bbf_m.jpg",
+            "author_name": "Bees",
+            "author_url": "http://www.flickr.com/photos/bees/",
+            "provider_name": "Flickr",
+            "provider_url": "http://www.flickr.com/",
+            "embeddable_url": "http://www.flickr.com/photos/bees/2341623661/"
+        }
+    ]
 }
 ~~~
 
@@ -39,28 +40,29 @@ We highly recommend providing the ```embeddable_url``` attribute so other client
 
 ~~~ js
 {
-    "type": "io.pnut.core.oembed.metadata",
-    "value": {
-        "version": "1.0",
-        "type": "video",
-        "provider_name": "YouTube",
-        "provider_url": "http://youtube.com/",
-        "width": 425,
-        "height": 344,
-        "title": "Amazing Nintendo Facts",
-        "author_name": "ZackScott",
-        "author_url": "http://www.youtube.com/user/ZackScott",
-        "html":
-            "<object width=\"425\" height=\"344\">
-                <param name=\"movie\" value=\"http://www.youtube.com/v/M3r2XDceM6A&fs=1\"></param>
-                <param name=\"allowFullScreen\" value=\"true\"></param>
-                <param name=\"allowscriptaccess\" value=\"always\"></param>
-                <embed src=\"http://www.youtube.com/v/M3r2XDceM6A&fs=1\"
-                    type=\"application/x-shockwave-flash\" width=\"425\" height=\"344\"
-                    allowscriptaccess=\"always\" allowfullscreen=\"true\"></embed>
-            </object>",
-        "embeddable_url": "http://youtube.com/watch?v=M3r2XDceM6A"
-    }
+    "io.pnut.core.oembed.metadata": [
+        {
+            "version": "1.0",
+            "type": "video",
+            "provider_name": "YouTube",
+            "provider_url": "http://youtube.com/",
+            "width": 425,
+            "height": 344,
+            "title": "Amazing Nintendo Facts",
+            "author_name": "ZackScott",
+            "author_url": "http://www.youtube.com/user/ZackScott",
+            "html":
+                "<object width=\"425\" height=\"344\">
+                    <param name=\"movie\" value=\"http://www.youtube.com/v/M3r2XDceM6A&fs=1\"></param>
+                    <param name=\"allowFullScreen\" value=\"true\"></param>
+                    <param name=\"allowscriptaccess\" value=\"always\"></param>
+                    <embed src=\"http://www.youtube.com/v/M3r2XDceM6A&fs=1\"
+                        type=\"application/x-shockwave-flash\" width=\"425\" height=\"344\"
+                        allowscriptaccess=\"always\" allowfullscreen=\"true\"></embed>
+                </object>",
+            "embeddable_url": "http://youtube.com/watch?v=M3r2XDceM6A"
+        }
+    ]
 }
 ~~~
 
@@ -68,23 +70,24 @@ We highly recommend providing the ```embeddable_url``` attribute so other client
 
 ~~~ js
 {
-    "type": "io.pnut.core.oembed.metadata",
-    "value": {
-        "version": "1.0",
-        "type": "html5video",
-        "provider_name": "Video.js",
-        "provider_url": "http://www.videojs.com",
-        "width": 970,
-        "height": 404,
-        "title": "Disney Nature's Oceans",
-        "author_name": "Disney",
-        "author_url": "http://nature.disney.com/oceans",
-        "sources": [
-            {"type": "video/mp4", "url": "http://vjs.zencdn.net/v/oceans.mp4"},
-            {"type": "video/webm", "url": "http://vjs.zencdn.net/v/oceans.webm"}
-        ]
-        "poster_url": "http://www.videojs.com/img/poster.jpg",
-    }
+    "io.pnut.core.oembed.metadata": [
+        {
+            "version": "1.0",
+            "type": "html5video",
+            "provider_name": "Video.js",
+            "provider_url": "http://www.videojs.com",
+            "width": 970,
+            "height": 404,
+            "title": "Disney Nature's Oceans",
+            "author_name": "Disney",
+            "author_url": "http://nature.disney.com/oceans",
+            "sources": [
+                {"type": "video/mp4", "url": "http://vjs.zencdn.net/v/oceans.mp4"},
+                {"type": "video/webm", "url": "http://vjs.zencdn.net/v/oceans.webm"}
+            ]
+            "poster_url": "http://www.videojs.com/img/poster.jpg",
+        }
+    ]
 }
 ~~~
 
@@ -92,26 +95,27 @@ We highly recommend providing the ```embeddable_url``` attribute so other client
 
 ~~~ js
 {
-    "type": "io.pnut.core.oembed",
-    "value": {
-        "type": "audio",
-        "genre": "hip hop",
-        "license": "cc-by",
-        "release": "1",
-        "version": "1.0",
-        "track_type": "original",
-        "thing reserved": "this thing!",
-        "embeddable_url": "https:\/\/audio.pnut.io\/62",
-        "duration": 185,
-        "bitrate": 128,
-        "title": "Sooong",
-        "provider_name": "pnut.io",
-        "provider_url": "https:\/\/pnut.io",
-        "file_id": "62",
-        "file_token_read": "DGWeUU0eF-jYLm5th4sTb-0Atfvml81C",
-        "url_expires_at": "2020-11-08T14:41:28Z",
-        "url": "https:\/\/d2fk0vffd5axpg.cloudfront.net\/cw_I3Y2Ta8Bn3sPlJMkdislekjfcyngFHHrWaT?Expires=1604846488..."
-    }
+    "io.pnut.core.oembed.metadata": [
+        {
+            "type": "audio",
+            "genre": "hip hop",
+            "license": "cc-by",
+            "release": "1",
+            "version": "1.0",
+            "track_type": "original",
+            "thing reserved": "this thing!",
+            "embeddable_url": "https:\/\/audio.pnut.io\/62",
+            "duration": 185,
+            "bitrate": 128,
+            "title": "Sooong",
+            "provider_name": "pnut.io",
+            "provider_url": "https:\/\/pnut.io",
+            "file_id": "62",
+            "file_token_read": "DGWeUU0eF-jYLm5th4sTb-0Atfvml81C",
+            "url_expires_at": "2020-11-08T14:41:28Z",
+            "url": "https:\/\/d2fk0vffd5axpg.cloudfront.net\/cw_I3Y2Ta8Bn3sPlJMkdislekjfcyngFHHrWaT?Expires=1604846488..."
+        }
+    ]
 }
 ~~~
 
@@ -119,24 +123,25 @@ We highly recommend providing the ```embeddable_url``` attribute so other client
 
 ~~~ js
 {
-    "type": "io.pnut.core.oembed.metadata",
-    "value": {
-        "provider_url": "http://soundcloud.com",
-        "description": "Listen to Merenti - La Karambaa by M\u00e9renti | Create, record and share the sounds you create anywhere to friends, family and the world with SoundCloud, the world's largest community of sound creators.",
-        "title": "Merenti - La Karambaa by M\u00e9renti",
-        "html": "<iframe width=\"500\" height=\"166\" scrolling=\"no\" frameborder=\"no\" src=\"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F6733249&show_artwork=true&maxwidth=900\"></iframe>",
-        "author_name": "M\u00e9renti",
-        "height": 166,
-        "width": 500,
-        "thumbnail_url": "http://i1.sndcdn.com/artworks-000003051440-mm2z46-t500x500.jpg?d95e793",
-        "thumbnail_width": 500,
-        "version": "1.0",
-        "provider_name": "SoundCloud",
-        "type": "rich",
-        "thumbnail_height": 500,
-        "author_url": "http://soundcloud.com/mrenti"
-        "embeddable_url": "http://soundcloud.com/mrenti/merenti-la-karambaa"
-    }
+    "io.pnut.core.oembed.metadata": [
+        {
+            "provider_url": "http://soundcloud.com",
+            "description": "Listen to Merenti - La Karambaa by M\u00e9renti | Create, record and share the sounds you create anywhere to friends, family and the world with SoundCloud, the world's largest community of sound creators.",
+            "title": "Merenti - La Karambaa by M\u00e9renti",
+            "html": "<iframe width=\"500\" height=\"166\" scrolling=\"no\" frameborder=\"no\" src=\"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F6733249&show_artwork=true&maxwidth=900\"></iframe>",
+            "author_name": "M\u00e9renti",
+            "height": 166,
+            "width": 500,
+            "thumbnail_url": "http://i1.sndcdn.com/artworks-000003051440-mm2z46-t500x500.jpg?d95e793",
+            "thumbnail_width": 500,
+            "version": "1.0",
+            "provider_name": "SoundCloud",
+            "type": "rich",
+            "thumbnail_height": 500,
+            "author_url": "http://soundcloud.com/mrenti"
+            "embeddable_url": "http://soundcloud.com/mrenti/merenti-la-karambaa"
+        }
+    ]
 }
 ~~~
 

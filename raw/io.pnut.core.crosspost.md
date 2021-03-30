@@ -14,20 +14,23 @@ Optional fields can clarify the originating service, if there is a relevant exte
 
 ~~~ json
 {
-    "type": "io.pnut.core.crosspost",
-    "value": {
-        "canonical_url": "https://twitter.com/pnutio/status/875679848903192576",
-        "source": {
-            "name": "Twitter",
-            "url": "https://twitter.com"
-        },
-        "user": {
-            "avatar_image": "https://pbs.twimg.com/profile_images/862301868910813184/H4iLmfZ4_bigger.jpg",
-            "username": "pnutio"
+    "io.pnut.core.crosspost": [
+        {
+            "canonical_url": "https://twitter.com/pnutio/status/875679848903192576",
+            "source": {
+                "name": "Twitter",
+                "url": "https://twitter.com"
+            },
+            "user": {
+                "avatar_image": "https://pbs.twimg.com/profile_images/862301868910813184/H4iLmfZ4_bigger.jpg",
+                "username": "pnutio"
+            }
         }
-    }
+    ]
 }
 ~~~
+
+The API will check for a valid URL.
 
 <!-- provide a complete description of the fields in the "value" object for your raw -->
 ## Fields

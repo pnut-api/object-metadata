@@ -12,15 +12,16 @@ This is meant to support Apple's 'Live Photos', and can be used on any platform.
 
 ~~~ js
 {
-    "type":"com.hutattedonmyarm.livephoto",
-    "value": {
-        "version": "1.0",
-        "width": "1959",
-        "height": "2048",
-        "photo_url": "https://i.imgur.com/abcdef.jpg",
-        "video_url": "https://somehost.com/abcdef.mov",
-        "title": "A moving picture"
-    }
+    "com.hutattedonmyarm.livephoto": [
+        {
+            "version": "1.0",
+            "width": "1959",
+            "height": "2048",
+            "photo_url": "https://i.imgur.com/abcdef.jpg",
+            "video_url": "https://somehost.com/abcdef.mov",
+            "title": "A moving picture"
+        }
+    ]
 }
 ~~~
 

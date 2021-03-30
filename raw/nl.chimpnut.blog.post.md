@@ -12,14 +12,12 @@ The longpost "raw" is meant to provide extended text for a Pnut post.
 
 ~~~ js
 {
-    "type":"nl.chimpnut.blog.post",
-    "value": {
-        "body": "Dass es eine Webapplikation ist, macht dann aber \u00fcberhaupt keinen
-         Sinn ;-) im Gegenteil: \"woher wei\u00df ich dass das nicht ausgelesen wird?\"
-        ",
-        "title": "",
-        "tstamp": 1487171761002
-    }
+    "nl.chimpnut.blog.post": [
+        {
+            "body": "Dass es eine Webapplikation ist, macht dann aber \u00fcberhaupt keinen Sinn ;-) im Gegenteil: \"woher wei\u00df ich dass das nicht ausgelesen wird?\"",
+            "tstamp": 1487171761002
+        }
+    ]
 }
 ~~~
 

@@ -15,29 +15,31 @@ Easily attach a file to a post or message, using a "replacement value". By inclu
 #### Provided to Pnut.io
 ~~~ js
 {
-    "type": "com.example.test",
-    "value": {
-        "+io.pnut.core.file": {
-            "file_token": "12345abcde",
-            "format": "url",
-            "file_id": "1",
-        },
-        "other_values": "are preserved"
-    }
+    "com.example.test": [
+        {
+            "+io.pnut.core.file": {
+                "file_token": "12345abcde",
+                "format": "url",
+                "file_id": "1",
+            },
+            "other_values": "are preserved"
+        }
+    ]
 }
 ~~~
 
 #### Returned by API
 ~~~ js
 {
-    "type": "com.example.test",
-    "value": {
-        "file_token_read": "new_file_token",
-        "file_id": "4",
-        "url": "http://example.com/file_url.png",
-        "url_expires_at": "2018-03-24T01:00:00Z",
-        "other_values": "are preserved"
-    }
+    "com.example.test": [
+        {
+            "file_token_read": "new_file_token",
+            "file_id": "4",
+            "url": "http://example.com/file_url.png",
+            "url_expires_at": "2018-03-24T01:00:00Z",
+            "other_values": "are preserved"
+        }
+    ]
 }
 ~~~
 
@@ -48,15 +50,16 @@ Easily attach a file to a post or message, using a "replacement value". By inclu
 
 ~~~ js
 {
-    "type": "com.example.test",
-    "value": {
-        "+io.pnut.core.file": {
-            "file_token": "12345abcde",
-            "format": "metadata",
-            "file_id": "4",
-        },
-        "other_values": "are preserved"
-    }
+    "com.example.test": [
+        {
+            "+io.pnut.core.file": {
+                "file_token": "12345abcde",
+                "format": "metadata",
+                "file_id": "4",
+            },
+            "other_values": "are preserved"
+        }
+    ]
 }
 ~~~
 
@@ -64,15 +67,16 @@ Easily attach a file to a post or message, using a "replacement value". By inclu
 
 ~~~ js
 {
-    "type": "com.example.test",
-    "value": {
-        "file_token_read": "new_file_token",
-        "file_id": "1",
-        "is_complete": true,
-        "mime_type": "image/png",
-        ...other File object values...
-        "other_values": "are preserved"
-    }
+    "com.example.test": [
+        {
+            "file_token_read": "new_file_token",
+            "file_id": "1",
+            "is_complete": true,
+            "mime_type": "image/png",
+            ...other File object values...
+            "other_values": "are preserved"
+        }
+    ]
 }
 ~~~
 
@@ -85,15 +89,16 @@ This format can only be used with the `io.pnut.core.oembed` raw, not with 3rd pa
 
 ~~~ js
 {
-    "type": "io.pnut.core.oembed",
-    "value": {
-        "+io.pnut.core.file": {
-            "file_token": "12345abcde",
-            "format": "oembed",
-            "file_id": "4",
-        },
-        "other_values": "are preserved"
-    }
+    "io.pnut.core.oembed": [
+        {
+            "+io.pnut.core.file": {
+                "file_token": "12345abcde",
+                "format": "oembed",
+                "file_id": "4",
+            },
+            "other_values": "are preserved"
+        }
+    ]
 }
 ~~~
 
@@ -101,17 +106,18 @@ This format can only be used with the `io.pnut.core.oembed` raw, not with 3rd pa
 
 ~~~ js
 {
-    "type": "io.pnut.core.oembed",
-    "value": {
-        "file_token_read": "new_file_token",
-        "file_id": "4",
-        "url": "https://...",
-        "url_expires_at": "2019-04-01T01:00:00Z",
-        "version": "1.0",
-        "type": "photo",
-        ...other oembed values...
-        "other_values": "are preserved"
-    }
+    "io.pnut.core.oembed": [
+        {
+            "file_token_read": "new_file_token",
+            "file_id": "4",
+            "url": "https://...",
+            "url_expires_at": "2019-04-01T01:00:00Z",
+            "version": "1.0",
+            "type": "photo",
+            ...other oembed values...
+            "other_values": "are preserved"
+        }
+    ]
 }
 ~~~
 
@@ -123,15 +129,16 @@ If you provide `provider_name`, `provider_url`, or `embeddable_url` along with t
 
 ~~~ js
 {
-    "type": "io.pnut.core.oembed",
-    "value": {
-        "+io.pnut.core.file": {
-            "file_token": "12345abcde",
-            "format": "oembed",
-            "file_id": "1",
-        },
-        "provider_name": "My Cool App"
-    }
+    "io.pnut.core.oembed": [
+        {
+            "+io.pnut.core.file": {
+                "file_token": "12345abcde",
+                "format": "oembed",
+                "file_id": "1",
+            },
+            "provider_name": "My Cool App"
+        }
+    ]
 }
 ~~~
 
@@ -139,17 +146,18 @@ gets translated to:
 
 ~~~ js
 {
-    "type": "io.pnut.core.oembed",
-    "value": {
-        "file_token_read": "new_file_token",
-        "file_id": "1",
-        "url": "https://...",
-        "url_expires_at": "2018-03-24T01:00:00Z",
-        "version": "1.0",
-        "type": "photo",
-        ...other oembed values...
-        "provider_name": "My Cool App" # overridden by user
-    }
+    "io.pnut.core.oembed": [
+        {
+            "file_token_read": "new_file_token",
+            "file_id": "1",
+            "url": "https://...",
+            "url_expires_at": "2018-03-24T01:00:00Z",
+            "version": "1.0",
+            "type": "photo",
+            ...other oembed values...
+            "provider_name": "My Cool App" # overridden by user
+        }
+    ]
 }
 ~~~
 

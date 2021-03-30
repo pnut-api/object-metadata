@@ -14,39 +14,40 @@ The embed will not include up-to-date results for the poll. The client would hav
 
 ~~~ js
 {
-    "type": "io.pnut.core.poll-notice",
-    "value": {
-        "prompt": "What is your main \"computer\"?",
-        "poll_token": "7m_SG07ZbfhG1kNbfnMJl4ZDO15ioqt9",
-        "closed_at": "2018-05-19T14:52:46Z",
-        "poll_id": "132",
-        "options": [
-            {
-                "text": "Desktop Mac",
-                "position": 1
-            },
-            {
-                "text": "Desktop PC",
-                "position": 2
-            },
-            {
-                "text": "Laptop Mac",
-                "position": 3
-            },
-            {
-                "text": "Laptop PC",
-                "position": 4
-            },
-            {
-                "text": "Tablet",
-                "position": 5
-            },
-            {
-                "text": "Other",
-                "position": 6
-            }
-        ]
-    }
+    "io.pnut.core.poll-notice": [
+        {
+            "prompt": "What is your main \"computer\"?",
+            "poll_token": "7m_SG07ZbfhG1kNbfnMJl4ZDO15ioqt9",
+            "closed_at": "2018-05-19T14:52:46Z",
+            "id": "132",
+            "options": [
+                {
+                    "text": "Desktop Mac",
+                    "position": 1
+                },
+                {
+                    "text": "Desktop PC",
+                    "position": 2
+                },
+                {
+                    "text": "Laptop Mac",
+                    "position": 3
+                },
+                {
+                    "text": "Laptop PC",
+                    "position": 4
+                },
+                {
+                    "text": "Tablet",
+                    "position": 5
+                },
+                {
+                    "text": "Other",
+                    "position": 6
+                }
+            ]
+        }
+    ]
 }
 ~~~
 

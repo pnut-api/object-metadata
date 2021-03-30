@@ -13,38 +13,40 @@ Easily attach a poll to a post or message, using a "replacement value". By inclu
 #### Provided to Pnut.io
 ~~~ js
 {
-    "type": "io.pnut.core.poll-notice",
-    "value": {
-        "+io.pnut.core.poll": {
-            "poll_token": "12345abcde",
-            "poll_id": "1",
-        },
-        "other_values": "are preserved"
-    }
+    "io.pnut.core.poll-notice": [
+        {
+            "+io.pnut.core.poll": {
+                "poll_token": "12345abcde",
+                "poll_id": "1",
+            },
+            "other_values": "are preserved"
+        }
+    ]
 }
 ~~~
 
 #### Returned by API
 ~~~ js
 {
-    "type": "io.pnut.core.poll-notice",
-    "value": {
-        "poll_token": "12345abcde",
-        "poll_id": "1",
-        "prompt": "This is a poll?",
-        "closed_at": "2018-03-24T01:00:00Z",
-        "options": [
-            {
-                "text": "Looks like it",
-                "position": "1"
-            },
-            {
-                "text": "Fake news",
-                "position": "2"
-            }
-        ].
-        "other_values": "are preserved"
-    }
+    "io.pnut.core.poll-notice": [
+        {
+            "poll_token": "12345abcde",
+            "id": "1",
+            "prompt": "This is a poll?",
+            "closed_at": "2018-03-24T01:00:00Z",
+            "options": [
+                {
+                    "text": "Looks like it",
+                    "position": "1"
+                },
+                {
+                    "text": "Fake news",
+                    "position": "2"
+                }
+            ].
+            "other_values": "are preserved"
+        }
+    ]
 }
 ~~~
 

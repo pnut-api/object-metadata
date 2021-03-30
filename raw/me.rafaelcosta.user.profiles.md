@@ -27,36 +27,37 @@ signal
 
 ~~~ js
 {
-    "type": "me.rafaelcosta.user.profiles",
-    "value": {
-        "profiles": [
-            {
-                "service": "signal",
-                "id": "+12223334444"
-            },
-            {
-                "service": "telegram",
-                "id": "rafaelcosta"
-            },
-            {
-                "service": "facebook",
-                "id": "thisthat444"
-            },
-            {
-                "service": "facebook",
-                "id": "thatthis444",
-                "text": "Work"
-            },
-            {
-                "service": "blog",
-                "url": "https://example.com"
-            },
-            {
-                "service": "homepage",
-                "url": "https://example.com"
-            }
-        ]
-    }
+    "me.rafaelcosta.user.profiles": [
+        {
+            "profiles": [
+                {
+                    "service": "signal",
+                    "id": "+12223334444"
+                },
+                {
+                    "service": "telegram",
+                    "id": "rafaelcosta"
+                },
+                {
+                    "service": "facebook",
+                    "id": "thisthat444"
+                },
+                {
+                    "service": "facebook",
+                    "id": "thatthis444",
+                    "text": "Work"
+                },
+                {
+                    "service": "blog",
+                    "url": "https://example.com"
+                },
+                {
+                    "service": "homepage",
+                    "url": "https://example.com"
+                }
+            ]
+        }
+    ]
 }
 ~~~
 

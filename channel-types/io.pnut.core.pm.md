@@ -11,6 +11,8 @@ Private message channels enforce that there is at least one non-owner user_id in
 
 In addition, this channel type differs from others in that it is designed to provide a simple, combined API for channel creation, reuse and message sending. You can only create io.pnut.core.pm channels via the special endpoint for doing so.
 
+More explanation in [the how-to documentation](https://docs.pnut.io/how-to/private-messages).
+
 <!-- provide a way to contact you -->
 ## Maintainers
 * Pnut.io core team
@@ -19,6 +21,7 @@ In addition, this channel type differs from others in that it is designed to pro
 ## Used by 
 * [Patter](https://patter.chat/)
 * [Beta](https://beta.pnut.io/)
+* [HTML.is](https://html.is)
 
 <!-- provide references to related entries -->
 ## Related entries

@@ -14,10 +14,11 @@ The channel invite raw can be used to indicate that a post or message is an invi
 
 ~~~ js
 {
-    "type": "io.pnut.core.channel.invite",
-    "value": {
-        "channel_id": "18"
-    }
+    "io.pnut.core.channel.invite": [
+        {
+            "channel_id": "18"
+        }
+    ]
 }
 ~~~
 
@@ -25,11 +26,12 @@ The channel invite raw can be used to indicate that a post or message is an invi
 
 ~~~ js
 {
-    "type": "io.pnut.core.channel.invite",
-    "value": {
-        "channel_id": "18",
-        "name": "Pnut Developers"
-    }
+    "io.pnut.core.channel.invite": [
+        {
+            "channel_id": "18",
+            "name": "Pnut Developers"
+        }
+    ]
 }
 ~~~
 

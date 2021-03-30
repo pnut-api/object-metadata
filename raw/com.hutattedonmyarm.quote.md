@@ -29,16 +29,17 @@ Post:
 Raw (source with additional info):
 ~~~ js
 {
-    "type":"com.hutattedonmyarm.quote",
-    "value": {
-        "pos": [0],
-        "len": [45],
-        "source_pos": 48,
-        "source_len": 15,
-        "source_url": "https://en.wikipedia.org/wiki/Walter_Ulbricht",
-        "source_text": "Walter Ulbricht",
-        "source_created_at": "1961-08-13"
-    }
+    "com.hutattedonmyarm.quote": [
+        {
+            "pos": [0],
+            "len": [45],
+            "source_pos": 48,
+            "source_len": 15,
+            "source_url": "https://en.wikipedia.org/wiki/Walter_Ulbricht",
+            "source_text": "Walter Ulbricht",
+            "source_created_at": "1961-08-13"
+        }
+    ]
 }
 ~~~
 Post:
@@ -48,21 +49,23 @@ Baz: "Shut up, baz!"
 Raw (minimum):
 ~~~ js
 {
-    "type":"com.hutattedonmyarm.quote",
-    "value": {
-        "source_text": "@bazbt3"
-    }
+    "com.hutattedonmyarm.quote": [
+        {
+            "source_text": "@bazbt3"
+        }
+    ]
 }
 ~~~
 Raw (source only):
 ~~~ js
 {
-    "type":"com.hutattedonmyarm.quote",
-    "value": {
-        "source_pos": 0,
-        "source_len": 3,
-        "source_text": "@bazbt3"
-    }
+    "com.hutattedonmyarm.quote": [
+        {
+            "source_pos": 0,
+            "source_len": 3,
+            "source_text": "@bazbt3"
+        }
+    ]
 }
 ~~~
 Post:
@@ -72,12 +75,13 @@ Post:
 Raw (split quote):
 ~~~ js
 {
-    "type":"com.hutattedonmyarm.quote",
-    "value": {
-        "pos": [0, 36],
-        "len": [24, 10],
-        "source_text": "Stabbed man"
-    }
+    "com.hutattedonmyarm.quote": [
+        {
+            "pos": [0, 36],
+            "len": [24, 10],
+            "source_text": "Stabbed man"
+        }
+    ]
 }
 ~~~
 

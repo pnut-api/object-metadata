@@ -9,7 +9,7 @@ The raw and channel-types folders contain a single documentation file in Markdow
 ### Adding
 
 * [Fork this repository](https://help.github.com/articles/fork-a-repo)
-* In your fork, create a new Markdown file in the appropriate directory with a name matching the "type" for your metadata. _Note: while the pnut.io API does not prevent multiple raw / channels types from declaring the same "type", any **new** entry you submit here should not conflict with an existing entry._
+* In your fork, create a new Markdown file in the appropriate directory with a name matching the "type" for your metadata. _Note: while the pnut.io API does not prevent multiple raw / channel types from declaring the same "type", any **new** entry you submit here should not conflict with an existing entry._
 * Commit your changes and [submit a pull request](https://help.github.com/articles/using-pull-requests) for the new file. All structurally valid entries will be accepted, but we ask that you focus on submitting raw items that are useful candidates for other developers to utilize.
 
 ### Modifying
@@ -18,4 +18,4 @@ You may modify existing entries, but all pull requests will be approved by pnut.
 
 ### Collaborating
 
-Use the [issue tracker](https://github.com/pnut-api/object-metadata/issues) and the [Developer channel](https://patter.chat/room.html?channel=18) to discuss new standards, modifications, and changes to the process.
+Use the [issue tracker](https://github.com/pnut-api/object-metadata/issues) and the [Developer channel](https://patter.chat/18) to discuss new standards, modifications, and changes to the process.

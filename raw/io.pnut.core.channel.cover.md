@@ -12,14 +12,15 @@ This raw item provides a cover image for a channel, similar to a cover image for
 
 ~~~ js
 {
-    "type": "io.pnut.core.channel.cover",
-    "value": {
-        "+io.pnut.core.file": {
-            "file_token": "abcdefg",
-            "format": "metadata",
-            "file_id": "8"
+    "io.pnut.core.channel.cover": [
+        {
+            "+io.pnut.core.file": {
+                "file_token": "abcdefg",
+                "format": "metadata",
+                "file_id": "8"
+            }
         }
-    }
+    ]
 }
 ~~~
 

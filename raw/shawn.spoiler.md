@@ -16,11 +16,12 @@ Clients could offer users "Do not hide this topic" for the rest of a session whe
 
 ~~~ json
 {
-    "type": "shawn.spoiler",
-    "value": {
-        "topic": "Star Trek: DS9",
-        "expired_at": "2018-04-27T13:02:56Z"
-    }
+    "shawn.spoiler": [
+        {
+            "topic": "Star Trek: DS9",
+            "expired_at": "2018-04-27T13:02:56Z"
+        }
+    ]
 }
 ~~~
 
@@ -38,4 +39,5 @@ Clients could offer users "Do not hide this topic" for the rest of a session whe
 
 <!-- provide references to compatible apps / service -->
 ## Used by
-* 
+* [Beta](https://beta.pnut.io/)
+* [HTML.is](https://html.is)

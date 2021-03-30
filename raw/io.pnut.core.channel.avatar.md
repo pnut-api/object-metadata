@@ -12,14 +12,15 @@ This raw item provides an avatar image for a channel, similar to an avatar image
 
 ~~~ js
 {
-    "type": "io.pnut.core.channel.avatar",
-    "value": {
-        "+io.pnut.core.file": {
-            "file_token": "abcdefg",
-            "format": "metadata",
-            "file_id": "8"
+    "io.pnut.core.channel.avatar": [
+        {
+            "+io.pnut.core.file": {
+                "file_token": "abcdefg",
+                "format": "metadata",
+                "file_id": "8"
+            }
         }
-    }
+    ]
 }
 ~~~
 

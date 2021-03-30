@@ -20,19 +20,20 @@ A message where this raw is attached must present a formatted representation of 
 
 ~~~ js
 {
-	"type": "io.aya.movie.review",
-	"value": {
-		"title": "the US film title",
-		"original_title": "the original title for foreign films",
-		"imdb_url": "the link to the film's IMDb page",
-		"rating": 4.5,
-		"release_date": "1973-08-14",
-		"tmdb_id": 334246,
-		"review": "the film's review",
-		"director": ["director1"],
-		"cast": ["actor1", "actor2", "actor3", "actor4", "actor5"],
-		"poster_url": "the link to the film's poster"
-	}
+    "io.aya.movie.review": [
+        {
+            "title": "the US film title",
+            "original_title": "the original title for foreign films",
+            "imdb_url": "the link to the film's IMDb page",
+            "rating": 4.5,
+            "release_date": "1973-08-14",
+            "tmdb_id": 334246,
+            "review": "the film's review",
+            "director": ["director1"],
+            "cast": ["actor1", "actor2", "actor3", "actor4", "actor5"],
+            "poster_url": "the link to the film's poster"
+        }
+    ]
 }
 ~~~
 
@@ -40,14 +41,15 @@ A message where this raw is attached must present a formatted representation of 
 
 ~~~ js
 {
-    "type": "io.aya.movie.review",
-    "value": {
-        "title": "the US film title",
-        "rating": 2,
-        "release_date": "2020",
-        "review": "the film's review",
-        "tmdb_id": 334246
-    }
+    "io.aya.movie.review": [
+        {
+            "title": "the US film title",
+            "rating": 2,
+            "release_date": "2020",
+            "review": "the film's review",
+            "tmdb_id": 334246
+        }
+    ]
 }
 ~~~
 

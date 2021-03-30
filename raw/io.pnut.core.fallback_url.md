@@ -13,12 +13,15 @@ If a client has an issue or does not know how to display a content type, this fa
 
 ~~~ js
 {
-    "type": "io.pnut.core.fallback_url",
-    "value": {
-        "url": "https://beta.pnut.io/messages/18"
-    }
+    "io.pnut.core.fallback_url": [
+        {
+            "url": "https://beta.pnut.io/messages/18"
+        }
+    ]
 }
 ~~~
+
+The API will check for a valid URL.
 
 <!-- provide a complete description of the fields in the "value" object for your raw -->
 ## Fields
