@@ -7,7 +7,7 @@
 <!-- provide a description of what your raw represents -->
 The embedded poll raw specifies a poll object that should be displayed with this post.
 
-The embed will not include up-to-date results for the poll. The client would have to fetch the poll separately. This only gives an overview and the `poll_token` and `poll_id` combo that may be necessary to retrieve the full poll.
+The embed will not include up-to-date results for the poll. The client would have to fetch the poll separately. This only gives an overview and the `poll_token` and `id` combo that may be necessary to retrieve the full poll.
 
 <!-- provide at least one example of what your raw might look like in the wild -->
 ## Examples
@@ -60,7 +60,7 @@ The embed will not include up-to-date results for the poll. The client would hav
 | `prompt` | Required  | string | A readable name of the poll. |
 | `poll_token` | Required | string | A token to access and respond to the poll. |
 | `closed_at` | Required | string | The time at which the poll closes in ISO 8601 format. |
-| `poll_id` | Required | string | Primary identifier for a poll. |
+| `id` | Required | string | Primary identifier for a poll. |
 | `options` | Required | list | A list of 2 to 10 responses for the poll. `text` and `position` will be set for each. |
 
 <!-- provide a way to contact you -->
